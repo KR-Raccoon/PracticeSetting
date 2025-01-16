@@ -4,6 +4,7 @@ my-java-project/
 │   │   ├── java/                      # Java 소스 코드 디렉토리
 │   │   │   └── com/
 │   │   │       └── example/
+│   │   │         └── FrameApplication.java  # 실행파일
 │   │   │           └── app/
 │   │   │               ├── MainApplication.java
 │   │   │               └── config/

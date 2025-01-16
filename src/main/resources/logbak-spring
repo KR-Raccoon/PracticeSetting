@@ -3,11 +3,12 @@
     <!-- 공통 프로퍼티 -->
     <property name="LOG_PATH" value="${logging.file.path}" />
     <property name="APP_NAME" value="${spring.application.name}" />
+    <property name="LOG_PATTERN" value="%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n" />
 
     <!-- 콘솔 로그 -->
     <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
         <encoder>
-            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n</pattern>
+            <pattern>${LOG_PATTERN}</pattern>
         </encoder>
     </appender>
 
